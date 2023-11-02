@@ -11,6 +11,8 @@ const createWeatherChart = (container, data) => {
     const gust = document.getElementById('gust');
     const displayCpu = document.getElementById('displayCpu');
     const mainTemperature = document.getElementsByClassName('mainTemperature')[0];
+    const buttonCpu = document.getElementById('buttonCpu');
+    const buttonWeather = document.getElementById('buttonWeather');
 
     ville.innerText = data.city.name;
     temp.innerText = Math.round(data.list[0].main.temp) + ' °C';
@@ -22,13 +24,20 @@ const createWeatherChart = (container, data) => {
         if (displayCpu.style.display === "none") {
             displayCpu.style.display = 'block';
             mainTemperature.style.display = 'none';
+            buttonWeather.style.background = 'none';
+            buttonCpu.style.background = 'rgba(220, 220, 220, 0.8)';
         } else {
             displayCpu.style.display = 'none';
             mainTemperature.style.display = 'grid';
+            buttonWeather.style.background = 'rgba(220, 220, 220, 0.8)';
+            buttonCpu.style.background = 'none';
         }
     }
 
-    setInterval(toggleDisplay, 5000);
+    buttonCpu.addEventListener('click', toggleDisplay);
+    buttonWeather.addEventListener('click' ,toggleDisplay);
+
+
 
     for (let i = 0; i < iconWeath.length; i++) {
         iconWeath[i].setAttribute('src', 'https://openweathermap.org/img/wn/' + data.list[i].weather[0].icon + '@4x.png');
