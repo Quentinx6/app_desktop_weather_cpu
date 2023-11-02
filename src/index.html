@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div id="weather"></div>
+      <div class="mainContainer">
+        <div class="location">
+          <p>My location</p>
+          <p>Toronto</p>
+          <p>Vancouver</p>
+          <p>Ottawa</p>
+        </div>
+        <div class="container">
+          <div class="mainTemperature">
+            <div class="temperature">
+              <!--{`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`}-->
+              <img id="iconWeather" src="" alt=""/>
+              <p id="ville"></p>
+              <p id="temp"></p>
+            </div>
+            <div class="wind">
+              <div class="windLeft">
+                <p>WIND</p>
+                <p class="windP"><span id="speed">2</span>
+                <div class="windIndicate">
+                  <span> KM/H</span>
+                  <span> Wind</span>
+                </div>
+                </p>
+                <span class="separator"></span>
+                <p class="windP"><span id="gust">2</span>
+                <div class="windIndicate">
+                  <span> KM/H</span>
+                  <span> Gust</span>
+                </div>
+                </p>
+              </div>
+              <div class="windRight">
+              </div>
+            </div>
+            <div class="indexUv">
+              <p>UV INDEX</p>
+              <p class="marginBottom level">0</p>
+              <p class="notMargin">Low</p>
+              <p class="uvBlock"></p>
+              <p class="marginBottom protection">Sun protection</p>
+              <p class="notMargin protection">is not necessary</p>
+            </div>
+            <div class="sunrise">
+              <p>SUNRISE</p>
+              <p class="level">7:59</p>
+              <p class="notMargin">in the morning</p>
+              <p></p>
+              <p class="protection">Sun 6:44 is a evening</p>
+            </div>
+            <div class="average">
+              <p>AVERAGE</p>
+              <p class="level">- 4°</p>
+              <p></p>
+              <p class="notMargin marginBottom">from average</p>
+              <p class="notMargin">daily high</p>
+            </div>
+            <div class="prediction">
+              <p>10-DAY FORCAST</p>
+              <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                            <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                                          <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                                          <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                                          <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                                          <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                                          <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                                          <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                                          <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                                          <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+                                          <div class="blockPredic">
+                <p>Today</p>
+                <!-- {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} -->
+                <img class="iconWeath" src="" alt=""/>
+                <p>10°C</p>
+                <p class="tempBlock"></p>
+                <p>10°C</p>
+              </div>
+            </div>
+          </div>
+          <div id="displayCpu" style="display: none">
+            <input type="number" value="100"/>
+            <div id="cpu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="renderer.js"></script>
+  </body>
+</html>
